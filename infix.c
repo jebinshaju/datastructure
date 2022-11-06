@@ -56,6 +56,7 @@ int main()
 				post[j]=item;
 				j++;
 			}
+			pop();
 		}
 		else
 		{
