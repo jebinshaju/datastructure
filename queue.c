@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int rear=-1,front=-1,size=5,queue[5];
+int rear=-1,front=-1,size=5,queue[20];
 
 int enqueue()
 {
@@ -70,6 +70,8 @@ int main()
 {
 		int op;
 		printf("Queue operations.\n");
+		printf("Enter the size :: ");
+		scanf("%d",&size);
 		while(1)
 		{
 			printf("\n<<<<< 1.Enqueue === 2.Dequeue === 3.display === 4.exit >>>>> \n\nEnter your option:: ");

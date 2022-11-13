@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int top=-1,size=5,stack[5];
+int top=-1,size=5,stack[20];
 void push(int item)
 {
 	if(top==size-1)
@@ -67,6 +67,8 @@ int main()
 {
 	int op,item;
 	printf("Stack operations.\n");
+	printf("Enter the size :: ");
+	scanf("%d",&size);
 	while(1)
 	{
 		printf("\n1.push\n2.pop\n3.display\n4.status\n5.exit\nEnter your option:: ");

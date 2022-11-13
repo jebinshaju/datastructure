@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int rear=-1,front=-1,size=3,queue[3];
+int rear=-1,front=-1,size=3,queue[20];
 
 int enqueue()
 {
@@ -84,7 +84,8 @@ int main()
 {
 		int op,item;
 		printf("Circular Queue operations.\n");
-		printf("Size of circular queue is 3.");
+		printf("Enter the size :: ");
+		scanf("%d",&size);
 		while(1)
 		{
 			printf("\n<<<<< 1.Enqueue === 2.Dequeue === 3.display === 4.exit >>>>> \nEnter your option:: ");

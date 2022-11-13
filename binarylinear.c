@@ -84,7 +84,54 @@ int main()
 }
 
 
+/*
 
+Enter the number of elements of array: 4
+Enter the elemnts in ascending order.
+Enter the element A[0]: 1
+Enter the element A[1]: 4
+Enter the element A[2]: 6
+Enter the element A[3]: 8
+
+
+Enter 1 to binary search
+Enter 2 to linear search
+Enter 3 to exit
+
+Enter your option:::  1
+Enter the search element: 4
+Element found at index 1.
+
+Enter 1 to binary search
+Enter 2 to linear search
+Enter 3 to exit
+
+Enter your option:::  1
+Enter the search element: 5
+Element not found.
+
+Enter 1 to binary search
+Enter 2 to linear search
+Enter 3 to exit
+
+Enter your option:::  2
+Enter the serach element: 6
+Element found at index 2.
+
+Enter 1 to binary search
+Enter 2 to linear search
+Enter 3 to exit
+
+Enter your option:::  2
+Enter the serach element: 7
+Element not found.
+
+Enter 1 to binary search
+Enter 2 to linear search
+Enter 3 to exit
+
+Enter your option:::  3
+*/
 
 
 
