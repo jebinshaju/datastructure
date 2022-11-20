@@ -151,7 +151,7 @@ void evaluation(int j)
 		if(isalpha(post[i])!=0)
 		{
 			printf("Enter the value for %c : ",post[i]);
-			scanf("%d",&c[i]);
+			scanf("%d",&c[m]);
 			m++;
 		}
 	}
@@ -199,15 +199,15 @@ int main()
 }
 
 /*
-Enter the infix expression: (a+b)*(c-d)
-The postfix expression is ab+cd-*
-Postfix expression : ab+cd-*
+Enter the infix expression: (a+b)*(b-C)
+The postfix expression is ab+bC-*
+Postfix expression : ab+bC-*
 
 Enter the value for a : 1
 Enter the value for b : 2
-Enter the value for c : 3
-Enter the value for d : 4
-Post fix experssion with value: 12+03-*
+Enter the value for b : 2
+Enter the value for C : 3
+Post fix experssion with value: 12+23-*
 
-The final result of the experssion: -9
+The final result of the experssion: -3
 */
