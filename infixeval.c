@@ -183,7 +183,7 @@ void evaluation(int j)
 			int y=pop1();
 			int x=pop1();
 			int z=operate(x,y,post[i]);
-			push(z);
+			push1(z);
 		}
 		i++;
 	}
@@ -197,3 +197,17 @@ int main()
 	int j=expression();
 	evaluation(j);
 }
+
+/*
+Enter the infix expression: (a+b)*(c-d)
+The postfix expression is ab+cd-*
+Postfix expression : ab+cd-*
+
+Enter the value for a : 1
+Enter the value for b : 2
+Enter the value for c : 3
+Enter the value for d : 4
+Post fix experssion with value: 12+03-*
+
+The final result of the experssion: -9
+*/
