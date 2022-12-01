@@ -12,6 +12,7 @@ struct node* readpoly(struct node *head)
 	int t,i;
 	struct node *p;
 	p=head;
+	
 
 	printf("\nEnter the number of terms  :: ");
 	scanf("%d",&t);
@@ -92,8 +93,9 @@ void multpoly()
 			}
 		}
 		p=p->link;
-		q=q->link;
+		q=qhead;
 	}
+	
 	p=rhead;
 	while(p!=NULL)
 	{
@@ -113,10 +115,13 @@ void multpoly()
 				prev=q;
 				q=q->link;
 			}
-			p=p->link;
+			
 		}
+		p=p->link;
 	}
+	
 }
+
 int main()
 {
 	printf("<<<<< Polynomial Multiplication using linked list >>>>>");
@@ -135,3 +140,32 @@ int main()
 	printf("\n\nProduct of POLYNOMIALS :");
 	display(rhead);	
 }
+
+/*
+<<<<< Polynomial Multiplication using linked list >>>>>
+1st expression :: 
+Enter the number of terms  :: 3
+
+Coefficient of term 1 : 6
+Exponent of term 1 : 3
+Coefficient of term 2 : 2
+Exponent of term 2 : 2
+Coefficient of term 3 : 7
+Exponent of term 3 : 0
+
+The 1st POLYNOMIAL :: 
+The  polynomial is::6X^3 + 2X^2 + 7X^0
+2nd expression :: 
+Enter the number of terms  :: 2
+
+Coefficient of term 1 : 6
+Exponent of term 1 : 3
+Coefficient of term 2 : 8
+Exponent of term 2 : 1
+
+The 2nd POLYNOMIAL:: 
+The  polynomial is::6X^3 + 8X^1
+
+Product of POLYNOMIALS :
+The  polynomial is::36X^6 + 48X^4 + 12X^5 + 58X^3 + 56X^1
+*/
